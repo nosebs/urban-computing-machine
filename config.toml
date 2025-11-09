@@ -8,9 +8,13 @@ parallel-jobs = 1
 
 [Tiktok]
 apkmirror-dlurl = "https://apkmirror.com/apk/tiktok-pte-ltd/tik-tok-including-musical-ly/"
-included-patches = "'SIM spoof'"
+included-patches = "'Spoof SIM country'"
 exclusive-patches = true
 version = "latest"
+patcher-args = """\
+  -OsimCountryIso=US \
+  -OnetworkCountryIso=US
+  """
 
 [YouTube]
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube/"
